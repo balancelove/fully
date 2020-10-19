@@ -1,29 +1,23 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-    "declaration": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "inlineSourceMap": true,
+    "target": "ES2018",
     "module": "commonjs",
-    "newLine": "lf",
-    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "inlineSourceMap":true,
+    "noImplicitThis": true,
     "noUnusedLocals": true,
-    "outDir": "dist",
-    "pretty": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "strictPropertyInitialization": false,
     "stripInternal": true,
-    "target": "ES2018"
+    "pretty": true,
+    "declaration": true,
+    "typeRoots": [ "./typings", "./node_modules/@types"],
+    "outDir": "dist"
   },
   "exclude": [
-    "app/view",
-    "app/public",
     "dist",
     "node_modules",
-    "test",
-    "**/*.d.ts",
-    "**/*.spec.ts"
+    "test"
   ]
 }

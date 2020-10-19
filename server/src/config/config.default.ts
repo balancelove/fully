@@ -1,18 +1,15 @@
-module.exports = (appInfo: any) => {
-  const config: any = (exports = {});
+import { EggAppConfig, EggAppInfo, PowerPartial } from 'egg';
+
+export type DefaultConfig = PowerPartial<EggAppConfig>;
+
+export default (appInfo: EggAppInfo) => {
+  const config = {} as DefaultConfig;
 
   // use for cookie sign key, should change to your own and keep security
-  config.keys = appInfo.name + '_1541510581780_3944';
+  config.keys = appInfo.name + '_1602842771437_5749';
 
+  // add your config here
   config.middleware = [];
-
-  config.view = {
-    defaultViewEngine: 'nunjucks'
-  };
-
-  config.assets = {
-    publicPath: '/public'
-  };
 
   return config;
 };

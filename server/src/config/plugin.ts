@@ -1,9 +1,4 @@
-exports.nunjucks ={
-  enable: true,
-  package: 'egg-view-nunjucks',
-};
-
-exports.assets = {
-  enable: true,
-  package: 'egg-view-assets'
-};
+import { EggPlugin } from 'egg';
+export default {
+  static: false, // default is true
+} as EggPlugin;

@@ -73,26 +73,16 @@ export default {
           component: '../layouts/BasicLayout',
           routes: [
             {
-              path: '/',
-              redirect: '/ci',
-            },
-            // {
-            //   path: '/welcome',
-            //   name: 'welcome',
-            //   icon: 'smile',
-            //   component: './Welcome',
-            // },
-            // {
-            //   path: '/admin',
-            //   name: 'admin',
-            //   icon: 'crown',
-            //   component: './Admin',
-            // },
-            {
-              name: '持续集成',
+              path: '/welcome',
+              name: 'welcome',
               icon: 'smile',
-              path: '/ci',
-              component: './CIManage',
+              component: './Welcome',
+            },
+            {
+              path: '/admin',
+              name: 'admin',
+              icon: 'crown',
+              component: './Admin',
             },
             {
               component: './404',
